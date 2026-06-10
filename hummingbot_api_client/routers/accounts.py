@@ -79,7 +79,7 @@ class AccountsRouter(BaseRouter):
 
     async def list_gateway_wallets(self) -> List[Dict]:
         """List all wallets."""
-        return await self._get("/accounts/gateway/wallets/")
+        return await self._get("/accounts/gateway/wallets")
 
     async def set_default_gateway_wallet(
         self,
